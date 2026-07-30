@@ -1,7 +1,6 @@
 import sys
 import json
 import time
-from pathlib import Path
 import requests
 from .visuals import typeout, typeout2, typeout3
 
@@ -30,7 +29,7 @@ def find_events(events):
         repo = event["repo"]["name"]
         if event["type"] == "WatchEvent":
             typeout2(f"----- starred repo: {repo}")
-        elif event["type"] == "CommitCommentEevent":
+        elif event["type"] == "CommitCommentEvent":
             typeout2(f"----- commented on a commit in repo: {repo}")
         elif event["type"] == "CreateEvent":
             typeout2(f"----- created a new repo: {repo}")
@@ -63,10 +62,9 @@ def find_events(events):
 
 def show_events(response):
     data = response.json()
-    find_events(data)
     if (data == []):
         typeout("----- No recent activity found for this user.")
-
+    find_events(data)
 
     
 def main():

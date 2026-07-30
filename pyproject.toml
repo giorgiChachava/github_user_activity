@@ -1,6 +1,7 @@
-[project] 
-name = "github_user_acoutivity"
+[project]
+name = "github_user_activity"
 version = "0.1.0"
+dependencies = ["requests>=2.28"]
 
 [project.scripts]
 github_activity = "gua_app.main:main"
