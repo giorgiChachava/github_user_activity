@@ -1,6 +1,6 @@
 [project] 
-name = "github_user_activity"
+name = "github_user_acoutivity"
 version = "0.1.0"
 
 [project.scripts]
-gua = "app.main:main"
+github_activity = "gua_app.main:main"

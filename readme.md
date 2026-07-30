@@ -10,17 +10,17 @@ Requires Python 3.9+.
 pip install -e .
 ```
 
-This installs the `gua` command.
+This installs the `github_activities` command.
 
 ## Usage
 
 ```bash
-gua <username>
+github_activity <username>
 ```
 
 Run it with no arguments to see the greeting and usage instructions:
 
 ```bash
-gua
+github_activity
 ```
 
