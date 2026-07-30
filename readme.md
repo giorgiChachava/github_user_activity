@@ -2,6 +2,9 @@
 
 A small CLI that fetches and displays a GitHub user's recent public activity, right in your terminal.
 
+Sample solution for the [Github User Activity](https://roadmap.sh/projects/github-user-activity)
+challenge from [roadmap.sh](https://roadmap.sh).
+
 ## Installation
 
 Requires Python 3.9+.
