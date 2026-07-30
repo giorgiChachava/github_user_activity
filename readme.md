@@ -24,23 +24,3 @@ Run it with no arguments to see the greeting and usage instructions:
 gua
 ```
 
-## Project structure
-
-```
-app/
-  __init__.py
-  main.py      # CLI entry point and argument handling
-  visuals.py   # terminal typewriter output helpers
-pyproject.toml # package metadata and the `gua` script entry point
-```
-
-## Development
-
-The entry point is defined in [pyproject.toml](pyproject.toml):
-
-```toml
-[project.scripts]
-gua = "app.main:main"
-```
-
-An editable install (`pip install -e .`) picks up code changes without reinstalling.
